@@ -19,7 +19,7 @@ const PaymentsByDate = () => {
     try {
       const formattedDate = date.toISOString().split("T")[0];
       const response = await axios.get(
-        `http://localhost:5050/subscriber/paid/${formattedDate}`
+        `https://cablemanagement-backend.onrender.com/subscriber/paid/${formattedDate}`
       );
 
       if (response.data.length === 0) {

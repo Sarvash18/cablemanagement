@@ -13,7 +13,9 @@ const Home = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("http://localhost:5050/subscriber");
+        const response = await axios.get(
+          "https://cablemanagement-backend.onrender.com/subscriber"
+        );
         const customers = response.data;
 
         const paid = customers.filter((c) => c.paid);

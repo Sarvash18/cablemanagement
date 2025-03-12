@@ -20,8 +20,8 @@ const Subscribers = () => {
 
       try {
         const url = customerId
-          ? `http://localhost:5050/subscriber/${customerId}`
-          : "http://localhost:5050/subscriber";
+          ? `https://cablemanagement-backend.onrender.com/subscriber/${customerId}`
+          : "https://cablemanagement-backend.onrender.com/subscriber";
 
         const response = await axios.get(url);
 
@@ -49,7 +49,7 @@ const Subscribers = () => {
     const todayDate = new Date().toISOString();
 
     try {
-      await axios.put(`http://localhost:5050/subscriber/${id}`, {
+      await axios.put(`https://cablemanagement-backend.onrender.com/subscriber/${id}`, {
         paid: true,
         lastPaidDate: todayDate,
       });
@@ -73,7 +73,7 @@ const Subscribers = () => {
 
   const handleSaveFee = async (id) => {
     try {
-      await axios.put(`http://localhost:5050/subscriber/${id}`, {
+      await axios.put(`https://cablemanagement-backend.onrender.com/subscriber/${id}`, {
         subscriptionFee: editedFee,
       });
 

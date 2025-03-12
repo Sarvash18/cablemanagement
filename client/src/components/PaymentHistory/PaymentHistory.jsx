@@ -9,7 +9,7 @@ const PaymentsHistory = ({ customerId }) => {
     const fetchPaymentHistory = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:5050/subscriber/${customerId}/payments/`
+          `https://cablemanagement-backend.onrender.com/subscriber/${customerId}/payments/`
         );
         setPayments(response.data.payments);
       } catch (error) {

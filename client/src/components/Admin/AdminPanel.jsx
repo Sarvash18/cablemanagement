@@ -29,7 +29,7 @@ const AdminPanel = () => {
   const handleCreate = async () => {
     try {
       const response = await axios.post(
-        "http://localhost:5050/subscriber",
+        "https://cablemanagement-backend.onrender.com/subscriber",
         formData
       );
       setMessage(response.data.message);
@@ -52,7 +52,7 @@ const AdminPanel = () => {
   const handleFetchCustomer = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:5050/subscriber/${searchId}`
+        `https://cablemanagement-backend.onrender.com/subscriber/${searchId}`
       );
       setCustomerDetails(response.data);
       setMessage("");
@@ -66,7 +66,7 @@ const AdminPanel = () => {
   const handleUpdate = async () => {
     try {
       await axios.put(
-        `http://localhost:5050/subscriber/${searchId}`,
+        `https://cablemanagement-backend.onrender.com/subscriber/${searchId}`,
         customerDetails
       );
       setMessage("Customer updated successfully");
@@ -80,7 +80,7 @@ const AdminPanel = () => {
   // Delete a customer
   const handleDelete = async () => {
     try {
-      await axios.delete(`http://localhost:5050/subscriber/${searchId}`);
+      await axios.delete(`https://cablemanagement-backend.onrender.com/subscriber/${searchId}`);
       setMessage("Customer deleted successfully");
       setCustomerDetails(null);
       setSearchId("");
