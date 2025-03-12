@@ -1,0 +1,7 @@
+@media (max-width: 576px) {
+  .unpaid {
+    font-size: 18px !important; /* Reduce title size */
+  }
+  
+  
+}
