@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.72d98f1e.css",
+    "main.js": "/static/js/main.c00203dd.js",
+    "static/media/cable-logo.png": "/static/media/cable-logo.f41c9cf5c0d8312b0eee.png",
+    "index.html": "/index.html",
+    "main.72d98f1e.css.map": "/static/css/main.72d98f1e.css.map",
+    "main.c00203dd.js.map": "/static/js/main.c00203dd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.72d98f1e.css",
+    "static/js/main.c00203dd.js"
+  ]
+}

@@ -2,7 +2,6 @@
 node_modules/
 
 # Ignore build files
-client/build/
 server/dist/
 
 # Ignore environment variables
