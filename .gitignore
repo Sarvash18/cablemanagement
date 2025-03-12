@@ -1,0 +1,25 @@
+# Ignore dependencies (for both client and server)
+node_modules/
+
+# Ignore build files
+client/build/
+server/dist/
+
+# Ignore environment variables
+client/.env
+server/.env
+.env
+
+# Ignore logs
+logs/
+*.log
+npm-debug.log*
+
+# Ignore coverage reports
+coverage/
+
+# Ignore system & editor-specific files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
